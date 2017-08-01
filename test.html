@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="css/test.css">-->
+    <style>
+        body{
+            background-color: lightcyan;
+        }
+        div.background
+        {
+            width:500px;
+            height:250px;
+            margin:100px;
+            border:2px solid black;
+            position:relative;
+            z-index:100;
+        }
+        div.transbox
+        {
+            width:400px;
+            height:180px;
+            margin:30px 50px;
+            border:1px solid rgba(255,0,0,0.3);
+            background:rgba(255,0,0,0.3);/*关键代码*/
+            z-index:101;
+        }
+    </style>
+</head>
+<body>
+<div class="background">
+    <div class="transbox">
+        This is some text that is placed in the transparent box.
+        This is some text that is placed in the transparent box.
+        This is some text that is placed in the transparent box.
+        This is some text that is placed in the transparent box.
+        This is some text that is placed in the transparent box.
+    </div>
+</div>
+</html>
