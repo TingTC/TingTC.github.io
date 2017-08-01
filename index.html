@@ -1,185 +1,304 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-    <!--<meta charset="UTF-8">-->
-    <!--<title>Title</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--<h3>This is a test website for tingting</h3>-->
-<!--<p>here is a test text about the github.io and lovectt</p>-->
-<!--<img src="images/WechatIMG25171.jpeg" alt="">-->
-<!--</body>-->
-<!--</html>-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Half_Five</title>
-    <link rel="stylesheet" href="css/base.css">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" />
-    <script src="src/jquery/jquery-2.0.3.min.js"></script>
+    <link rel="stylesheet" href="css/base.css">
     <style>
-        .nav{
-            height: 40px;
-            width: 100%;
-            line-height: 40px;
-            background-color: #f1f1f1;
-            /*position: fixed;*/
-            /*top: 0;*/
-            /*left: 0;*/
-        }
-        .reach{
-            height: 40px;
-            width: 100%;
-            line-height: 40px;
-            background-color: #f1f1f1;
-            position: fixed;
-            top:0;
-            left:0;
 
-        }
-        .logo{
-            width: 110px;
-            height: 40px;
-            padding: 0 0 0 20px;
-            background: url("images/logo.png")no-repeat center center;
-            background-size: 110px 40px;
-        }
-        .nav .w .fr{
-            padding-right: 20px;
-        }
-        /*.fr{*/
-        /*background-color: lightblue;*/
-        /*}*/
-        .fr li{
-            float: left;
-            padding:0 20px;
-            font-size: 14px;
-            color: #666;
-        }
-        .more{
-            width: 30px;
-            height: 30px;
-            margin-top: 5px;
-            background: url("images/more.png")no-repeat center center;
-            background-size: 30px 30px;
-        }
-        .more:hover{
-            background: url("images/more_hover.png")no-repeat center center;
-            background-size: 30px 30px;
+
+        @media (min-width: 1200px) {
+            .content{
+                width: 90%;
+                margin: 0 auto;
+            }
+            .content_middle{
+                width: 100%;
+                height: 500px;
+                text-align: center;
+                line-height: 500px;
+            }
+            .content_middle_logo{
+                width: 30%;
+                height: auto;
+                margin: 0 auto;
+            }
         }
 
-        .content{
-            width: 100%;
-            height: 1200px;
-            margin-top: 40px;
-            /*background-color: lightblue;*/
+        @media (min-width: 959px) and (max-width: 1199px){
+            .content{
+                width: 90%;
+                margin: 0 auto;
+            }
+            .content_middle{
+                width: 100%;
+                height: 500px;
+                text-align: center;
+                line-height: 500px;
+            }
+            .content_middle_logo{
+                width: 30%;
+                height: auto;
+                margin: 0 auto;
+            }
         }
-        .pang{
-            float: left;
-            width: 750px;
-            height: 750px;
-            background-color: lightcoral;
-            background: url("images/pang.jpg")no-repeat center center;
-            background-size: 750px 750px;
+        /* Portrait tablet to landscape and desktop */
+
+        @media (min-width: 768px) and (max-width: 959px) {
+            .content{
+                width: 90%;
+                margin: 0 auto;
+            }
+            .content_middle{
+                width: 100%;
+                height: 500px;
+                text-align: center;
+                line-height: 500px;
+            }
+            .content_middle_logo{
+                width: 30%;
+                height: auto;
+                margin: 0 auto;
+            }
         }
-        .pang2{
-            float: left;
-            width: 375px;
-            height: 375px;
-            margin-left: 30px;
-            background-color: lightcoral;
-            background: url("images/pang2.jpg")no-repeat center center;
-            background-size: 375px 375px;
-        }
-        .pang3{
-            float: left;
-            width: 375px;
-            height: 375px;
-            margin-left: 30px;
-            background-color: lightcoral;
-            background: url("images/pang3.jpg")no-repeat center center;
-            background-size: 375px 375px;
-        }
-        .pang4{
-            float: left;
-            width: 750px;
-            height: 341px;
-            margin-top: 20px;
-            background-color: lightcoral;
-            background: url("images/pang4.jpg")no-repeat center center;
-            background-size: 750px 341px;
-        }
-        .pang5{
-            float: left;
-            width: 450px;
-            height: 450px;
-            margin-top: 20px;
-            background-color: lightcoral;
-            background: url("images/pang5.jpg")no-repeat center center;
-            background-size: 450px 450px;
-        }
+
+        /* Landscape phone to portrait tablet */
+
+        @media (max-width: 767px) {}
+
+        /* Landscape phones and down */
+
+        @media (max-width: 480px) {}
+
+
+
+
+
     </style>
-
-    <script>
-
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if( $(window).scrollTop() > 40){
-                    var menu = document.getElementById("nav");
-                    menu.className = "reach";
-                }else{
-                    var menu = document.getElementById("nav");
-                    menu.className = "nav";
-                }
-            });
-        });
-    </script>
 </head>
 <body>
-<div class="nav" id="nav">
-    <div class="w">
-        <div class="fl">
-            <div class="logo">
-            </div>
-        </div>
-
-        <div class="fr">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Archive</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li class="more"></li>
-            </ul>
-            <!--<div class="fr more"></div>-->
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
 <div class="content">
-    <div class="w">
-        <div class="pang"></div>
-        <div class="pang2"></div>
-        <div class="pang3"></div>
-        <div class="pang4"></div>
-        <div class="pang5" style="margin-bottom: 10px"></div>
+    <div class="content_middle">
+        <img class="content_middle_logo" src="images/logo_3.png" alt="">
     </div>
 </div>
-<div class="footer"></div>
+
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Half_Five</title>-->
+    <!--<link rel="stylesheet" href="css/base.css">-->
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+    <!--<script src="src/jquery/jquery-2.0.3.min.js"></script>-->
+    <!--<style>-->
+        <!--.nav{-->
+            <!--height: 40px;-->
+            <!--width: 100%;-->
+            <!--line-height: 40px;-->
+            <!--background-color: #f1f1f1;-->
+            <!--/*position: fixed;*/-->
+            <!--/*top: 0;*/-->
+            <!--/*left: 0;*/-->
+        <!--}-->
+        <!--.reach{-->
+            <!--height: 40px;-->
+            <!--width: 100%;-->
+            <!--line-height: 40px;-->
+            <!--background-color: #f1f1f1;-->
+            <!--position: fixed;-->
+            <!--top:0;-->
+            <!--left:0;-->
+
+        <!--}-->
+        <!--.logo{-->
+            <!--width: 110px;-->
+            <!--height: 40px;-->
+            <!--padding: 0 0 0 20px;-->
+            <!--background: url("images/logo.png")no-repeat center center;-->
+            <!--background-size: 110px 40px;-->
+        <!--}-->
+        <!--.nav .w .fr{-->
+            <!--padding-right: 20px;-->
+        <!--}-->
+        <!--/*.fr{*/-->
+        <!--/*background-color: lightblue;*/-->
+        <!--/*}*/-->
+        <!--.fr li{-->
+            <!--float: left;-->
+            <!--padding:0 20px;-->
+            <!--font-size: 14px;-->
+            <!--color: #666;-->
+        <!--}-->
+        <!--.more{-->
+            <!--width: 30px;-->
+            <!--height: 30px;-->
+            <!--margin-top: 5px;-->
+            <!--background: url("images/more.png")no-repeat center center;-->
+            <!--background-size: 30px 30px;-->
+        <!--}-->
+        <!--.more:hover{-->
+            <!--background: url("images/more_hover.png")no-repeat center center;-->
+            <!--background-size: 30px 30px;-->
+        <!--}-->
+
+        <!--.content{-->
+            <!--width: 100%;-->
+            <!--height: 1200px;-->
+            <!--margin-top: 40px;-->
+            <!--/*background-color: lightblue;*/-->
+        <!--}-->
+        <!--.pang{-->
+            <!--float: left;-->
+            <!--width: 750px;-->
+            <!--height: 750px;-->
+            <!--background-color: lightcoral;-->
+            <!--background: url("images/pang.jpg")no-repeat center center;-->
+            <!--background-size: 750px 750px;-->
+        <!--}-->
+        <!--.pang2{-->
+            <!--float: left;-->
+            <!--width: 375px;-->
+            <!--height: 375px;-->
+            <!--margin-left: 30px;-->
+            <!--background-color: lightcoral;-->
+            <!--background: url("images/pang2.jpg")no-repeat center center;-->
+            <!--background-size: 375px 375px;-->
+        <!--}-->
+        <!--.pang3{-->
+            <!--float: left;-->
+            <!--width: 375px;-->
+            <!--height: 375px;-->
+            <!--margin-left: 30px;-->
+            <!--background-color: lightcoral;-->
+            <!--background: url("images/pang3.jpg")no-repeat center center;-->
+            <!--background-size: 375px 375px;-->
+        <!--}-->
+        <!--.pang4{-->
+            <!--float: left;-->
+            <!--width: 750px;-->
+            <!--height: 341px;-->
+            <!--margin-top: 20px;-->
+            <!--background-color: lightcoral;-->
+            <!--background: url("images/pang4.jpg")no-repeat center center;-->
+            <!--background-size: 750px 341px;-->
+        <!--}-->
+        <!--.pang5{-->
+            <!--float: left;-->
+            <!--width: 450px;-->
+            <!--height: 450px;-->
+            <!--margin-top: 20px;-->
+            <!--background-color: lightcoral;-->
+            <!--background: url("images/pang5.jpg")no-repeat center center;-->
+            <!--background-size: 450px 450px;-->
+        <!--}-->
+    <!--</style>-->
+
+    <!--<script>-->
+
+        <!--$(document).ready(function () {-->
+            <!--$(window).scroll(function () {-->
+                <!--if( $(window).scrollTop() > 40){-->
+                    <!--var menu = document.getElementById("nav");-->
+                    <!--menu.className = "reach";-->
+                <!--}else{-->
+                    <!--var menu = document.getElementById("nav");-->
+                    <!--menu.className = "nav";-->
+                <!--}-->
+            <!--});-->
+        <!--});-->
+    <!--</script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="nav" id="nav">-->
+    <!--<div class="w">-->
+        <!--<div class="fl">-->
+            <!--<div class="logo">-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="fr">-->
+            <!--<ul>-->
+                <!--<li>-->
+                    <!--<a href="#">Home</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">Archive</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">About</a>-->
+                <!--</li>-->
+                <!--<li class="more"></li>-->
+            <!--</ul>-->
+            <!--&lt;!&ndash;<div class="fr more"></div>&ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+<!--<div class="content">-->
+    <!--<div class="w">-->
+        <!--<div class="pang"></div>-->
+        <!--<div class="pang2"></div>-->
+        <!--<div class="pang3"></div>-->
+        <!--<div class="pang4"></div>-->
+        <!--<div class="pang5" style="margin-bottom: 10px"></div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="footer"></div>-->
+<!--</body>-->
+<!--</html>-->

@@ -1,9 +1,8 @@
 @charset "UTF-8";
-
-/*css 初始化*/
-*{
-    padding: 0;
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
     margin: 0;
+    padding: 0;
 }
 
 fieldset, img, input, button {
@@ -22,7 +21,6 @@ input {
     padding-bottom: 0;
     font-family: "SimSun", "宋体";
 }
-
 select, input {
     vertical-align: middle;
 }
@@ -33,9 +31,7 @@ select, input, textarea {
 }
 textarea {
     resize: none;
-}
-
-/*防止拖动*/
+}/*防止拖动*/
 img {
     border: 0;
     vertical-align: middle;
@@ -45,13 +41,12 @@ img {
 table {
     border-collapse: collapse;
 }
+
 body {
     font: 12px/150% Arial, Verdana, "\5b8b\4f53";
     color: #666;
-    background: #fff;
-    /*overflow:hidden;*/
+    background: #fff
 }
-
 .clearfix:before, .clearfix:after {
     content: "";
     display: table;
@@ -64,13 +59,12 @@ body {
 .clearfix {
     *zoom: 1; /*IE/7/6*/
 }
-
 a {
-    color: #777;
+    color: #666;
     text-decoration: none;
 }
-a:hover{
-    color: #555;
+a:hover {
+    color: #C81623;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,15 +78,14 @@ s, i, em {
     text-decoration: none;
 }
 
+.col-red {
+    color: #C81623 !important;
+}
 /*公共类*/
 .w {
     /*版心 提取 */
     width: 1210px;
     margin: 0 auto;
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*background-color: lightblue;*/
 }
 
 .fl {
@@ -114,33 +107,7 @@ s, i, em {
 .ar {
     text-align: right
 }
+
 .hide {
     display: none
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
