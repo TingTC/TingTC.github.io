@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon4.png" />
     <link rel="stylesheet" href="css/base.css">
+    <script src="src/jquery/jquery.js"></script>
     <style>
         *{
             margin: 0;
@@ -106,7 +107,21 @@
     </div>
 </div>
 
+<script>
+    $.ajax({
+        type: "POST",
+        url:"http://118.242.19.26:188/jf_market_jd_server/api/category/getJFCategories0",
+        data:null,
+        dataType: 'json',
+        success: function (suc) {
+            console.log(suc);
 
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            //alert("报错");
+        }
+    });
+</script>
 
 </body>
 </html>
